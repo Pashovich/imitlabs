@@ -1,7 +1,8 @@
 import random
 
-hardMode = [0.1,0.1,0.1,0.2,0.2,0.2]
-normalMode = [0.1,0.1,0.1,0.2,0.2,0.3]
+normalMode = [1/6 for _ in range(6)]
+normalMode[5]  = 1 - sum(normalMode[:-1])
+hardMode = [0.1,0.1,0.1,0.2,0.2,0.3]
 answersReplics = {
     'win': 'You won',
     'lose' : 'You lost',
