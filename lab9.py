@@ -47,7 +47,7 @@ def main():
     
     relust = [item/N for item in relust]
 
-    error = np.random.rand(n)
+
 
     plt.bar(y_pos,relust, align='center', alpha = 0.5)
     plt.xticks(y_pos, y_pos)
