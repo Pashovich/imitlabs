@@ -8,12 +8,12 @@ class Wheather:
         
     peroid = 3
     coefs = [[-0.4, 0.3, 0.1],#sun
-                    [0.4, 0.08, 0.4],#cloudy
-                    [0.1, 0.4, 0.05]] #somber
+                    [0.4, -0.8, 0.4],#cloudy
+                    [0.1, 0.4, -0.5]] #somber
 
     def __init__(self):
-        n = int(input('Кол-во дней: '))
-        self.array = [0, 0, 0] #list всех значений погоды
+        n = 10
+        self.array = [0, 0, 0] 
         self.start(n)
 
     def start(self,days):
